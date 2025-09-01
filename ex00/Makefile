@@ -2,7 +2,10 @@ COMP     = g++
 FLAGS    = -Wall -Wextra -Werror
 STD_FLAG = -std=c++98
 OUT_NAME = brainz
-SRCS     = main.cpp
+SRCS     = main.cpp \
+		   Zombie.cpp \
+		   newZombie.cpp \
+		   randomChump.cpp
 OBJS     = $(SRCS:.cpp=.o)
 
 %.o: %.cpp
