@@ -6,12 +6,11 @@
 class HumanA
 {
 	private:
-		Weapon weapon("");
 		std::string name;
 	public:
-		HumanA(std::string name, std::string weapon)
+		HumanA(std::string name, std::string rweapon)
 		{
-			HumanA::weapon.setType(weapon);
+			Weapon weapon(rweapon);
 			HumanA::name = name;
 		}
 };
